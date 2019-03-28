@@ -32,6 +32,11 @@ public class RichLinkView extends RelativeLayout {
     TextView textViewUrl;
 
     private String main_url;
+    // Colors
+    private int backgroundCardColor;
+    private int backgroundCardColorTitle;
+    private int backgroundCardColorDescription;
+    private int backgroundCardColorLink;
 
     private boolean isDefaultClick = true;
 
@@ -79,7 +84,10 @@ public class RichLinkView extends RelativeLayout {
         textViewDesp = (TextView) findViewById(R.id.rich_link_desp);
         textViewUrl = (TextView) findViewById(R.id.rich_link_url);
 
-
+        linearLayout.setBackgroundColor(backgroundCardColor);
+        textViewTitle.setTextColor(backgroundCardColorTitle);
+        textViewDesp.setTextColor(backgroundCardColorDescription);
+        textViewUrl.setTextColor(backgroundCardColorLink);
         if(meta.getImageurl().equals("") || meta.getImageurl().isEmpty()) {
             imageView.setVisibility(GONE);
         } else {
@@ -151,6 +159,23 @@ public class RichLinkView extends RelativeLayout {
     public void setLinkFromMeta(MetaData metaData) {
         meta = metaData;
         initView();
+    }
+
+    public void setBackgroundCardColor(int color)
+    {
+        this.backgroundCardColor = color;
+    }
+    public void setBackgroundCardColorTitle(int color)
+    {
+        this.backgroundCardColorTitle = color;
+    }
+    public void setBackgroundCardColorDescription(int color)
+    {
+        this.backgroundCardColorDescription = color;
+    }
+    public void setBackgroundCardColorLink(int color)
+    {
+        this.backgroundCardColorLink = color;
     }
 
     public MetaData getMetaData() {
