@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         
         
         richLinkView.setBackgroundCardColor(Color.GRAY);
-        richLinkView.setBackgroundCardColorTitle(Color.GREEN);
-        richLinkView.setBackgroundCardColorDescription(Color.WHITE);
-        richLinkView.setBackgroundCardColorLink(Color.BLUE);
+        richLinkView.setColorTextTitle(Color.GREEN);
+        richLinkView.setColorTextDescription(Color.WHITE);
+        richLinkView.setColorTextLink(Color.BLUE);
         richLinkView.setLink("https://stackoverflow.com", new ViewListener() {
             
             @Override
