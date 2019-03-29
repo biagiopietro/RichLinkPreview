@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -165,15 +164,15 @@ public class RichLinkView extends RelativeLayout {
     {
         this.backgroundCardColor = color;
     }
-    public void setBackgroundCardColorTitle(int color)
+    public void setColorTextTitle(int color)
     {
         this.backgroundCardColorTitle = color;
     }
-    public void setBackgroundCardColorDescription(int color)
+    public void setColorTextDescription(int color)
     {
         this.backgroundCardColorDescription = color;
     }
-    public void setBackgroundCardColorLink(int color)
+    public void setColorTextLink(int color)
     {
         this.backgroundCardColorLink = color;
     }

@@ -2,8 +2,8 @@ package io.github.ponnamkarthik.sample;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         goToList = (Button) findViewById(R.id.go_to_list);
 
         richLinkView.setBackgroundCardColor(Color.GRAY);
-        richLinkView.setBackgroundCardColorTitle(Color.GREEN);
-        richLinkView.setBackgroundCardColorDescription(Color.WHITE);
-        richLinkView.setBackgroundCardColorLink(Color.BLUE);
+        richLinkView.setColorTextTitle(Color.GREEN);
+        richLinkView.setColorTextDescription(Color.WHITE);
+        richLinkView.setColorTextLink(Color.BLUE);
         richLinkView.setLink("https://whatsapp.com" ,new ViewListener() {
             @Override
             public void onSuccess(boolean status) {
