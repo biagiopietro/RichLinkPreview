@@ -32,7 +32,7 @@
             android:textColor="@color/grey_900"
             android:padding="2dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:text="Data"/>
 
@@ -44,7 +44,7 @@
             android:textColor="@color/blue_grey_300"
             android:padding="2dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:text="Data"/>
 
@@ -56,7 +56,7 @@
             android:padding="2dp"
             android:gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:text="Data"/>
 

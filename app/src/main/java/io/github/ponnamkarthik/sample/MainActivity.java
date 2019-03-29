@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         richLinkView.setColorTextTitle(Color.GREEN);
         richLinkView.setColorTextDescription(Color.WHITE);
         richLinkView.setColorTextLink(Color.BLUE);
-        richLinkView.setLink("https://whatsapp.com" ,new ViewListener() {
+        richLinkView.setLink("https://www.repubblica.it" ,new ViewListener() {
             @Override
             public void onSuccess(boolean status) {
 
